@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tierlist</title>
+    <style>
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+}
+
+header {
+    height: 20px;
+    
+}
+
+body {
+    font-family: 'Tahoma, sans-serif';
+        font-size: 18px;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        height: 1100px;
+}
+
+.logo {
+    width: 130px;
+    height: 65px;
+    border: solid 2px;
+    border-color: white;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.logo:hover {
+    border: 2px solid red;
+  }
+
+.nav_links {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 1000px;
+    line-height: 2;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    padding-inline: 20px;
+}
+
+.nav_animes {
+    font-family: myFont;
+    margin-left: 200px;
+    text-transform: uppercase;
+}
+
+.overview {
+    position: relative;
+    margin-top: -43px;
+    margin-left: 150px;
+    
+}
+
+.anime {
+    position: relative;
+    margin-top: -37px;
+    margin-left: 430px;
+}
+
+.websites {
+    position: relative;
+    margin-top: -37px;
+    margin-left: 710px;
+}
+
+.line {
+    border: solid;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #383f44;
+    padding-bottom: 15px;
+}
+
+.line_top {
+    margin-top: 0px;
+}
+
+
+a:hover {
+    color: red;
+  }
+
+  .footer {
+    background-color: rgba(70, 69, 69, 0.615);
+    height: 70px;
+    margin-top: 200px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: -20px;
+    width: 1519px;
+}
+
+.overview {
+  list-style-type: none;
+  position: relative;
+}
+
+.sub-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100px;
+  padding-top: 60px;
+  margin-left: -50px;
+}
+
+.sub-list li {
+  margin-left: 0;
+}
+
+.overview li:hover > .sub-list {
+  display: block;
+}
+
+
+
+
+#tier-wrap {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 700px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+
+#tier-container {
+    display: flex;
+    flex-direction: column;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    background: #1a1a17;
+}
+
+
+.tier-row {
+    display: flex;
+    flex-direction: row;
+    min-height: 80px;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+
+
+
+.label-holder {
+    width: 100px;
+    min-height: 80px;
+    border-right: solid 1px #000;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.label {
+    color: #333;
+    overflow: hidden;
+    text-align: center;
+    margin: 5px;
+}
+
+
+.tier-row {
+    display: flex;
+    flex-direction: row;
+    min-height: 80px;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+
+
+img {
+    width: 90px;
+    height: 80px;
+}
+
+.zero_two {
+    position: absolute;
+    left: 625px;
+    bottom: 270px;
+    width: 350px;
+    height: 600px;
+}
+
+.zero_mini {
+    position: absolute;
+    left: 1000px;
+    bottom: 270px;
+    width: 300px;
+    height: 300px;
+}
+
+h3 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 100px;
+    
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="line_top"></div>
+    <header>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://docs.google.com/forms/d/1rqqAuafd5hCqtR5i0ucDf9IZVtmdq0w71nAJsqFdboU/edit"
+                        target="_blank">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="line"></div>
+    <div class="nav_animes">
+        <a href="index.html"><img class="logo" src="Capture_2.png" alt="logo"></a>
+        <nav>
+            <ul class="overview">
+                <li>
+                  <a href="overview.html">Overview</a>
+                  <ul class="sub-list">
+                    <li><a href="overview.html">About Anime</a></li>
+                    <li><a href="tierlist.html">Tierlist</a></li>
+                    <div class="line"></div>
+                  </ul>
+                </li>
+              </ul>
+              
+              
+            <ul class="anime">
+                <li><a href="animes.html">Animes</a></li>
+            </ul>
+            <ul class="websites">
+                <li><a href="websites.html">Websites</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="line"></div>
+    </header>
+    <h3>A Short Tierlist With Some Of my Favorite Characters</h3>
+    <div style="position:relative; clear: both" id="tier-wrap" class="create">
+        <div id="tier-container">
+            <div class="tier-row">
+                <div class="label-holder" contenteditable="true" style="background-color: rgb(255, 127, 127);"><span class="label">Absolute Number 1</span></div>
+                <div class="tier sort"><div id="212" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/mashiro-shiina-sakura-sou-no-pet-na-kanojojpg.png&quot;);"></div><div id="1" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/001-darling-in-the-franxxjpg.png&quot;);"></div><div id="380" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/shouko-nishimiya-a-silent-voicejpg.png&quot;);"></div><div id="465" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/zero-two-darling-in-the-franxxjpg.png&quot;);"></div><div id="376" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/shiro-deadman-wonderlandjpg.png&quot;);"></div></div>
+                <img src="https://thicc.mywaifulist.moe/waifus/9215/d7d11891994485360b749bd9de1933bfb0e6fae16c9ff62044f114f2278ec01e_thumb.jpg">
+                <img src="https://thicc.mywaifulist.moe/waifus/479/423c0d79caf436f37fbd16aa7dee75fd0fc8387560b263effefcf9565753bb3a_thumb.jpeg">
+                <img src="https://thicc.mywaifulist.moe/waifus/479/423c0d79caf436f37fbd16aa7dee75fd0fc8387560b263effefcf9565753bb3a_thumb.jpeg">
+                <img src="https://thicc.mywaifulist.moe/waifus/479/423c0d79caf436f37fbd16aa7dee75fd0fc8387560b263effefcf9565753bb3a_thumb.jpeg">
+                <div class="settings-control">
+                    <div class="settings"></div>
+                    <div class="move-buttons">
+                        <div class="move-up"></div>
+                        <div class="move-down"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tier-row">
+                <div class="label-holder" contenteditable="true" style="background-color: rgb(255, 191, 127);"><span class="label">S-rank</span></div>
+                <div class="tier sort"><div id="230" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/mikoto-misaka-toaru-kagaku-no-railgunjpg.png&quot;);"></div><div id="236" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/mirai-kuriyama-kyoukai-no-kanatajpg.png&quot;);"></div><div id="299" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/rachel-gardner-angels-of-deathjpg.png&quot;);"></div><div id="428" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/violet-evergardenjpg.png&quot;);"></div><div id="383" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/sinon-sword-art-onlinejpg.png&quot;);"></div></div>
+                <img src="https://thicc.mywaifulist.moe/waifus/479/423c0d79caf436f37fbd16aa7dee75fd0fc8387560b263effefcf9565753bb3a_thumb.jpeg" class="touka">
+                <div class="settings-control">
+                    <div class="settings"></div>
+                    <div class="move-buttons">
+                        <div class="move-up"></div>
+                        <div class="move-down"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tier-row">
+                <div class="label-holder" contenteditable="true" style="background-color: rgb(255, 223, 127);"><span class="label">A </span></div>
+                <div class="tier sort"><div id="137" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/kanade-tachibana-angel-beatsjpg.png&quot;);"></div><div id="229" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/mikasa-ackerman-attack-on-titanjpg.png&quot;);"></div><div id="282" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/nezuko-kamado-demon-slayerjpg.png&quot;);"></div><div id="316" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/rem-rezerojpg.png&quot;);"></div><div id="204" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/mai-sakurajima-rascal-does-not-dream-of-bunny-girl-senpaijpg.png&quot;);"></div></div>
+                <div class="settings-control">
+                    <div class="settings"></div>
+                    <div class="move-buttons">
+                        <div class="move-up"></div>
+                        <div class="move-down"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tier-row">
+                <div class="label-holder" contenteditable="true" style="background-color: rgb(255, 255, 127);"><span class="label">B</span></div>
+                <div class="tier sort"><div id="60" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/chitanda-eru-hyoukajpg.png&quot;);"></div><div id="75" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/emilia-rezerojpg.png&quot;);"></div><div id="111" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/hiyori-iki-noragamijpg.png&quot;);"></div><div id="272" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/nao-tomori-charlottejpg.png&quot;);"></div></div>
+                <div class="settings-control">
+                    <div class="settings"></div>
+                    <div class="move-buttons">
+                        <div class="move-up"></div>
+                        <div class="move-down"></div>
+                    </div>
+                </div>
+            </div>
+           
+                                <div class="tier-row">
+                    <div class="label-holder" contenteditable="true" style="background-color: rgb(127, 255, 255);"><span class="label">I like you... as a friend '^^</span></div>
+                    <div class="tier sort"><div id="130" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/juuzou-suzuya-tokyo-ghouljpg.png&quot;);"></div><div id="222" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/megumin-konosubajpg.png&quot;);"></div><div id="301" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/ram-rezerojpg.png&quot;);"></div></div>
+                    <div class="settings-control">
+                        <div class="settings"></div>
+                        <div class="move-buttons">
+                            <div class="move-up"></div>
+                            <div class="move-down"></div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="tier-row">
+                    <div class="label-holder" contenteditable="true" style="background-color: rgb(127, 191, 255);"><span class="label">nope</span></div>
+                    <div class="tier sort"><div id="238" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/misa-amane-death-notejpg.png&quot;);"></div></div>
+                    <div class="settings-control">
+                        <div class="settings"></div>
+                        <div class="move-buttons">
+                            <div class="move-up"></div>
+                            <div class="move-down"></div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="tier-row">
+                    <div class="label-holder" contenteditable="true" style="background-color: rgb(127, 127, 255);"><span class="label">Garbage</span></div>
+                    <div class="tier sort"><div id="117" class="character" style="background-image: url(&quot;/images/chart/chart/the-only-waifu-list-template-you-need-134076/ichigo-darling-in-the-franxxjpg.png&quot;);"></div></div>
+                    <div class="settings-control">
+                        <div class="settings"></div>
+                        <div class="move-buttons">
+                            <div class="move-up"></div>
+                            <div class="move-down"></div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <img src="zero-two-black.png" class="zero_two">
+    <img src="pngaaa.com-2585831.png" class="zero_mini">
+
+    <div class="footer">
+        &copy copyright Sadnagii-2023
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<style>
+
+ 
+#container {
+ width: 100%;
+ overflow: hidden;
+ margin: 50px auto;
+ background: transparent;
+}
+/*header*/
+header {
+	width: 800px;
+	margin: 40px auto;
+}
+
+header h1 {
+	text-align: center;
+	font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
+	
+}
+
+header p {
+	font: 100 15px/1.5 Helvetica, Verdana, sans-serif;
+	text-align: justify;
+}
+
+/*photobanner*/
+
+.photobanner, .photob {
+	height: 220px;
+	width: 300px;
+	margin-bottom: 80px;
+}
+/*keyframe animations*/
+.first, .second {
+	        animation: bannermove 10s linear infinite;
+}
+
+
+@keyframes bannermove {
+ 0% {
+    right: 0;
+    
+ }
+ 100% {
+    right: 100%;
+    
+ }
+
+}
+
+
+.photobanner {
+	height: 242px;
+	width: 300px;
+	margin-bottom: 80px;
+}
+
+.photobanner img {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.photobanner img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+
+	-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+.first, .second {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+}
+
+.main-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sub-list {
+  display: none;
+}
+
+.main-list li:hover > .sub-list {
+  display: block;
+}
+
+
+
+</style>
+<body>
+    <div id="container">
+            <header>
+                <h1>Animated Photo Banner</h1>
+                <p>temporary testing text</p>
+            </header>
+            
+            <!-- Each image is 350px by 233px -->
+            <div class="photobanner">
+                
+              <img class="first" src="https://m.media-amazon.com/images/M/MV5BNzY1ZDU1Y2UtNmFlMi00YWY1LWFmNDYtNjNjYTBiNGNkNGE0XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg">
+
+              <img class="second" src="https://m.media-amazon.com/images/M/MV5BNzY1ZDU1Y2UtNmFlMi00YWY1LWFmNDYtNjNjYTBiNGNkNGE0XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg">
+        </div>
+
+		<ul class="main-list">
+			<li>Item 1</li>
+			<li>Item 2
+			  <ul class="sub-list">
+				<li>Sub Item 1</li>
+				<li>Sub Item 2</li>
+			  </ul>
+			</li>
+			<li>Item 3</li>
+		  </ul>
+		  
+</body>
+</html>
